@@ -3,11 +3,11 @@ import javax.swing.JOptionPane;
 public class SecretMessage {
 
 	public static void main (String[] args) {
-		String password = "password";
+		String password = "Password";
 		String message = JOptionPane.showInputDialog("Set a secret message");
-		String attempt = JOptionPane.showInputDialog("Do you know the secret message?");
+		String attempt = JOptionPane.showInputDialog("Do you know the password?");
 		
-		if (password == attempt) {
+		if (attempt.equals(password)) {
 			JOptionPane.showMessageDialog(null, "pretty good the secret message is" + message);
 		}
 		else {
